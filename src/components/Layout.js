@@ -46,10 +46,13 @@ function Layout({children}){
             <div className="flex  w-full justify-center">
                 {
                     menuItems.map((item,index) =>(
-                        <div className="flex flex-col"> 
+                        <div className="flex flex-col justify-end items-center"> 
 
-                       {location.pathname === item.path && (<div>
-                           <h1>Active</h1>
+                       {location.pathname === item.path && (<div className="flex flex-col items-center">
+                         <div className="h-5 w-10 bg-primary rounded-t-full "> </div>
+                         <div className="h5- w-20 bg-primary rounded-t-full text-center" >
+                               <i className={`${item.icon} text-xl text-white `}></i>
+                              </div>
                        </div>)}
          <div className={`px-20 bg-primary py-5 ${index === 0 && 'rounded-l'} ${index === menuItems.length-1 && 'rounded-r'}flex items-center justify-center space-x-5`} key={index}>
                       
