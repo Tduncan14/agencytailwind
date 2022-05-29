@@ -3,10 +3,11 @@ import Home from './pages/Home/Home';
 import Contact from './pages/Contact/Contact';
 import Client from './pages/Client/Client';
 import About from './pages/About/About';
+import './App.css'
 
 function App() {
   return (
-    <div className=" center text-4xl bg-red-500">
+    <div className="">
      <BrowserRouter>
         <Routes >
           <Route path='/' element={<Home />} />
