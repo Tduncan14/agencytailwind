@@ -56,7 +56,9 @@ function Layout({children}){
                        </div>)}
          <div className={`px-20 bg-primary py-5 ${index === 0 && 'rounded-l'} ${index === menuItems.length-1 && 'rounded-r'}flex items-center justify-center space-x-5`} key={index}>
                       
-                      <i className={`${item.icon} text-secondary text-xl`}></i>
+                      {/* <i className={`${item.icon} text-secondary text-xl`}></i> */}
+                    
+                         {location.pathname !== item.path && <i className={`${item.icon} text-secondary text-xl`}></i> }
                        <Link className="text-secondary text-xl" to={item.path}>{item.title}</Link>
                         </div>
                         </div>
