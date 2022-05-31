@@ -12,7 +12,7 @@ function Intro(){
                 <h1 className="text-7xl font-semibold text-priamry">The Best <br /> <b className="text-secondary"> Marketing </b></h1>
                 <h1 className="text-5xl font-semibold">Doesn't feel like marketing</h1>
 
-                <button className="px-16 py-5 bg-secondary text-white  max-w-max">Get Started</button>
+                <button className="px-16 py-5 bg-secondary text-white  max-w-max hover:bg-primary">Get Started</button>
 
             </div>
 

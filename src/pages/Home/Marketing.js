@@ -47,6 +47,23 @@ import React from 'react';
             recognized as successful regardless of industry. Here's what we found, in no particular order
 
         </p>
+
+
+        <div className="grid grid-cols-2 gap-20 mt-10">
+            {
+                strategies.map(item=>(
+                    <div className='border border-primary p-5 flex-col space-y-5 rounded transform hover:scale-105 duration-300'>
+                           <h1 className="text-center mx-20 -mt-8 bg-white border-primary border text-2xl rounded py-2 text-secondary">{item.title}</h1>
+                           <img src={item.image} alt="/" className="h-24 w-24"/>
+                           <p className="text-gray-600 text-xl hover:text-primary">{item.description}</p>
+
+                       
+                             
+                    </div>
+                ))
+            }
+
+        </div>
         </>
     )
   }
