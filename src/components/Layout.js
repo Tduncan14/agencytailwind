@@ -36,7 +36,7 @@ function Layout({children}){
     return(
         <>
         
-        <div className="content">
+        <div className="content pb-44">
         {children}
         </div>
         
