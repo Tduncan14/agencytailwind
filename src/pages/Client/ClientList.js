@@ -61,6 +61,17 @@ function ClientList(){
 
 
 
+    const previous = () =>{
+
+        setSelectedIndex(selectedClientIndex - 1)
+    }
+
+
+    const next =() => {
+
+
+        setSelectedIndex(selectedClientIndex + 1)
+    }
 
     return(
         <>
@@ -71,17 +82,17 @@ function ClientList(){
         <div className="flex justify-center -mt-44 items-end space-x-10">
    {    
    
- selectedClientIndex !==0 && <i className="ri-arrow-left-line text-4xl text-gray-600 cursor-pointer p-2  hover:bg-gray-700 hover:text-white hover:rounded"></i>}
+ selectedClientIndex !==0 && <i className="ri-arrow-left-line text-4xl text-gray-600 cursor-pointer p-2  hover:bg-gray-700 hover:text-white hover:rounded" onClick={previous}></i>}
                   <div className="bg-white shadow p-5 w-[500px] border">
                 
                       <div className="flex space-x-10 items-center justify-between">
-                          <h1 className="text-primary font-semibold text-2xl">{clients[0].name}</h1>
-                          <img src={clients[0].logo} className="h-32 w-32" alt="" />
+                          <h1 className="text-primary font-semibold text-2xl">{clients[selectedClientIndex].name}</h1>
+                          <img src={clients[selectedClientIndex].logo} className="h-32 w-32" alt="" />
                       </div>
 
-                      <p className="text-gray-600 text-md mt-5">{clients[0].description}</p>
+                      <p className="text-gray-600 text-md mt-5">{clients[selectedClientIndex].description}</p>
                   </div>
-         { selectedClientIndex!==clients.length - 1 && <i className="ri-arrow-right-line text-4xl text-gray-600 cursor-pointer hover:bg-gray-700 p-2 hover:text-white " ></i>}
+         { selectedClientIndex!==clients.length - 1 && <i className="ri-arrow-right-line text-4xl text-gray-600 cursor-pointer hover:bg-gray-700 p-2 hover:text-white "  onClick={next}></i>}
 
                  
             
