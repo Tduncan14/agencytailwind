@@ -41,7 +41,7 @@ function Layout({children}){
         </div>
         
         {/* footer */}
-        <div className="fixed bottom-10 left-0 right-0 ">
+        <div className="fixed bottom-10 left-0 right-0  mt-5">
             
             <div className="flex  w-full justify-center">
                 {
