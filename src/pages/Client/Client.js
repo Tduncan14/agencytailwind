@@ -3,6 +3,7 @@ import Layout from '../../components/Layout';
 import Intro from './Intro';
 import ClientList from './ClientList';
 import {useLocation} from 'react-router-dom';
+import Numbers from './Number';
 
 
 
@@ -22,6 +23,7 @@ return(
     <Layout>
         <Intro />
         <ClientList/>
+        <Numbers/>
     </Layout>
 )
 
