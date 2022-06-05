@@ -37,8 +37,8 @@ import React from 'react';
 
     return( 
         <>
-        <h1 className="text-5xl font-semibold text-primary">Want to boost your business growth ?</h1>
-        <h1 className="text-7xl font-semibold text-primary mt-10"> The <b className="text-secondary">Solution</b> is here ...</h1>
+        <h1 className="text-5xl font-semibold text-primary sm:text-3xl sm:mt-10">Want to boost your business growth ?</h1>
+        <h1 className="text-7xl font-semibold text-primary mt-10 sm:text-5xl"> The <b className="text-secondary">Solution</b> is here ...</h1>
 
 
         <p className=" text-gray-600 text-xl mt-10">
@@ -49,7 +49,7 @@ import React from 'react';
         </p>
 
 
-        <div className="grid grid-cols-2 gap-20 mt-10">
+        <div className="grid grid-cols-2 gap-20 mt-10 sm:grid-cols-1">
             {
                 strategies.map(item=>(
                     <div className='border border-primary p-5 flex-col space-y-5 rounded transform hover:scale-105 duration-300'>

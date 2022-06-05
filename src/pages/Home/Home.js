@@ -23,7 +23,7 @@ function Home(){
 
 return(
     <Layout>
-    <div className='px-32'>
+    <div className='px-32 sm:px-2'>
     <Intro />
     <Marketing />
     <WhyMarket/>
