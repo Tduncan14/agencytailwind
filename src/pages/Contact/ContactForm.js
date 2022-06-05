@@ -40,16 +40,14 @@ function ContactForm(){
                  rows={10}
                  className="border py-3 px-5 bg-blue-50 focus:out rounded-lg outline-none text-gray-500 w-full" />
 
-
-
-               <div>
-               <button className="text-white bg-secondary px-5 py-2 rounded-xl mt-5 max-w-max flex justify-end sm:h-[75px]  ">Send a message</button>
-               </div>
              
              </div>
 
          
         
+          
+               <button className="text-white bg-secondary px-5 py-2 rounded-xl mt-5 max-w-max flex justify-end   ">Send a message</button>
+             
             
          </form>
          
