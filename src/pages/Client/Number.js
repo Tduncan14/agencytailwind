@@ -18,7 +18,7 @@ function Numbers (){
     return(
     
 
-        <div className="pr-36 pl-16 mt-20 sm:h-auto sm:px-5 sm:mt-10">
+        <div className="pr-36 pl-16 mt-20 sm:h-auto sm:px-5 sm:mt-10 sm:-space-y-10">
 
            <h1 className='text-2xl text-gray-600 my-5  sm:items-center sm:space-y-5 '>  Until today we have provided our services to ...</h1>
 
