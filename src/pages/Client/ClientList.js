@@ -90,19 +90,19 @@ function ClientList(){
    { selectedClientIndex !==0 && <i className="ri-arrow-left-line text-4xl text-gray-600 cursor-pointer p-2  hover:bg-gray-700 hover:text-white hover:rounded" onClick={previous}></i>}
                 
                 
-          <div className="grid grid-cols-3 items-start gap-3">
+          <div className="grid grid-cols-3 items-start gap-3 sm:grid-cols-1 sm:gap-2">
 
 
            {[clients[selectedClientIndex],
            clients[selectedClientIndex + 1]
-           ,clients[selectedClientIndex + 2]].map((item) => (<div  key={item.name} className="bg-white shadow  m-5 p-5 w-[400px] border h-[350px]">
-                <div className="flex space-x-10 items-center justify-between ">
+           ,clients[selectedClientIndex + 2]].map((item) => (<div  key={item.name} className="bg-white shadow  m-5 p-5 w-[400px] border h-[350px] sm:w-full  sm:h-auto">
+                <div className="flex space-x-10 sm:space-x-0 items-center justify-between  sm:flex-col  sm:text-center sm:justify-center sm:align-middle" >
                 <img src={item.logo} className="h-32 w-32 -mt-1" alt="" />
-                  <h1 className="text-primary font-semibold text-2xl">{item.name}</h1>
+                  <h1 className="text-primary remove font-semibold text-2xl sm:text-center mt-2 sm:ml-9 ">{item.name}</h1>
         
                     </div>
 
-                  <p className="text-gray-600 text-md mt-5">{item.description}</p>
+                  <p className="text-gray-600 text-md mt-5 ">{item.description}</p>
 </div>
 
 
@@ -124,7 +124,7 @@ function ClientList(){
 
 
             <div className='flex  justify-center  mt-10'>
-                <div className="flex space-x-2">
+                <div className="flex space-x-2 d">
                  
                   {[1,2,3,4,5].map((item,index) => (
                     <div className={`bg-gray-300 h-4 w-4 rounded-full space-x-2 cursor-pointer hover:scale-105 hover:transition-all:transform duration-300 ${selectedClientIndex === index && 'border-2 border-secondary h-5 w-5'}`} onClick={()=>setSelectedIndex(index)}>

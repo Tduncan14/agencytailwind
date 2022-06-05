@@ -4,6 +4,7 @@
 
 *{
     font-family:'Montserrat',sans-serif !important;
+
 }
 
 html , body{
@@ -30,6 +31,16 @@ html , body{
 
 
 
+
+@media screen and(max-width:640px){
+
+  .addheight{
+    height:500px !important;
+  }
+  
+
+  
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

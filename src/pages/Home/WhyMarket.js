@@ -11,7 +11,7 @@ import React from 'react';
 
     return(
         <div className="mt-20">
-            <h1 className="text-center  text-8xl font-semibold text-primary"> Why <b className="text-secondary">Marketing</b>?</h1>
+            <h1 className="text-center  text-8xl font-semibold text-primary sm:text-5xl"> Why <b className="text-secondary">Marketing</b>?</h1>
 
              <div className="h-[500px]">
              <lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_GjhcdO.json"  background="transparent"  speed="1"  loop  autoplay></lottie-player>
